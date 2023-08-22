@@ -25,8 +25,8 @@ try:
     # Git commands
     os.system(f"{git_executable} add .")
     os.system(f"{git_executable} commit -m '{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}'")
-    os.system(f"{git_executable} pull")
     os.system(f"{git_executable} fetch")
+    os.system(f"{git_executable} pull")
     os.system(f"{git_executable} push -u origin master")
     print("Git operations completed successfully")
 except Exception as e:
